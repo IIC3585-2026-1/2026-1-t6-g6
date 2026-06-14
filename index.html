@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Componentes</title>
+    <style>
+      .custom {
+        --card-width: 150px;
+        --card-height: 100px;
+        padding: 22px;
+      }
+    </style>
+    <script type="module" src="./components/card.js"></script>
+  </head>
+  <body>
+    <h2>Componente Card</h2>
+    <h3>Default card</h3>
+    <my-card>
+      Tarjeta con estilos por defecto
+    </my-card>
+    <h3>Custom Card</h3>
+    <my-card class="custom">
+      Tarjeta con estilos custom
+    </my-card>
+  </body>
+</html>
