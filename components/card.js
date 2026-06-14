@@ -15,7 +15,7 @@ templateCard.innerHTML = `
   <slot></slot>
 `;
 
-class MyCard extends HTMLElement {
+class Card extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -23,4 +23,4 @@ class MyCard extends HTMLElement {
   }
 }
 
-customElements.define("my-card", MyCard);
+customElements.define("web-card", Card);

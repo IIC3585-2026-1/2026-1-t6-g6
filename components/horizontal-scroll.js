@@ -39,7 +39,7 @@ templateScroll.innerHTML = `
   </div>
 `;
 
-class MyHorizontalScroll extends HTMLElement {
+class HorizontalScroll extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -47,4 +47,4 @@ class MyHorizontalScroll extends HTMLElement {
   }
 }
 
-customElements.define("my-horizontal-scroll", MyHorizontalScroll);
+customElements.define("web-horizontal-scroll", HorizontalScroll);
