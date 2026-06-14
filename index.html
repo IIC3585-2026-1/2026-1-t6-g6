@@ -5,12 +5,19 @@
     <title>Componentes</title>
     <style>
       .custom {
-        --card-width: 150px;
+        --card-width: 250px;
         --card-height: 100px;
         padding: 22px;
       }
+      .custom-scroll {
+        max-width: 70%;
+        margin: 0 auto;
+        border: 2px dashed #ccc;
+        border-radius: var(--radius, 10px);
+      }
     </style>
     <script type="module" src="./components/card.js"></script>
+    <script type="module" src="./components/horizontal-scroll.js"></script>
   </head>
   <body>
     <h2>Componente Card</h2>
@@ -22,5 +29,13 @@
     <my-card class="custom">
       Tarjeta con estilos custom
     </my-card>
+    <h3>Horizontal Scroll</h3>
+    <my-horizontal-scroll class="custom-scroll">
+      <my-card class="custom">Card 1</my-card>
+      <my-card class="custom">Card 2</my-card>
+      <my-card class="custom">Card 3</my-card>
+      <my-card class="custom">Card 4</my-card>
+      <my-card class="custom">Card 5</my-card>
+    </my-horizontal-scroll>
   </body>
 </html>
