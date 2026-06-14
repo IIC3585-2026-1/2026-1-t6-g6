@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./globals.css" />
+    <script type="module" src="./components/switch.js"></script>
+    <script type="module" src="./components/accordion.js"></script>
+    <script type="module" src="./components/breadcrumbs.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="item">
+        <h1>Switch</h1>
+        <web-switch>
+          <span slot="checked-message">Modo oscuro</span>
+          <span slot="unchecked-message">Modo claro</span>
+        </web-switch>
+      </div>
+
+      <div class="item">
+        <h1>Acordeón</h1>
+        <web-accordion>
+          <web-accordion-item>
+            <span slot="heading">Item 1</span>
+            <div class="panel">
+              Panel one content. Aquí puedes poner cualquier cosa: texto,
+              imágenes, listas, etc.
+            </div>
+          </web-accordion-item>
+
+          <web-accordion-item>
+            <span slot="heading">Item 2</span>
+            <div class="panel">Panel 2 content</div>
+          </web-accordion-item>
+
+          <web-accordion-item>
+            <span slot="heading">Item 3</span>
+            <div class="panel">Panel 3 content</div>
+          </web-accordion-item>
+        </web-accordion>
+      </div>
+
+      <div class="item">
+        <h1>Breadcrumbs</h1>
+        <web-breadcrumbs>
+          <web-breadcrumbs-item href="#">Inicio</web-breadcrumbs-item>
+          <web-breadcrumbs-item href="#">Productos</web-breadcrumbs-item>
+          <web-breadcrumbs-item>Camisa</web-breadcrumbs-item>
+        </web-breadcrumbs>
+      </div>
+    </main>
+  </body>
+</html>
