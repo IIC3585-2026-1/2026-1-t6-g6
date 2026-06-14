@@ -2,11 +2,14 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <title>Componentes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./globals.css" />
     <script type="module" src="./components/switch.js"></script>
     <script type="module" src="./components/accordion.js"></script>
     <script type="module" src="./components/breadcrumbs.js"></script>
+    <script type="module" src="./components/card.js"></script>
+    <script type="module" src="./components/horizontal-scroll.js"></script>
   </head>
   <body>
     <main>
@@ -48,6 +51,25 @@
           <web-breadcrumbs-item href="#">Productos</web-breadcrumbs-item>
           <web-breadcrumbs-item>Camisa</web-breadcrumbs-item>
         </web-breadcrumbs>
+      </div>
+
+      <div class="item">
+        <h1>Card</h1>
+        <h2>Default card</h2>
+        <my-card> Tarjeta con estilos por defecto </my-card>
+        <h2>Custom Card</h2>
+        <my-card class="custom"> Tarjeta con estilos custom </my-card>
+      </div>
+
+      <div class="item">
+        <h1>Horizontal Scroll</h1>
+        <my-horizontal-scroll class="custom-scroll">
+          <my-card class="custom">Card 1</my-card>
+          <my-card class="custom">Card 2</my-card>
+          <my-card class="custom">Card 3</my-card>
+          <my-card class="custom">Card 4</my-card>
+          <my-card class="custom">Card 5</my-card>
+        </my-horizontal-scroll>
       </div>
     </main>
   </body>

@@ -23,4 +23,23 @@ main {
     letter-spacing: 2px;
     margin: 0;
   }
+
+  h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
+
+.custom {
+  --card-width: 250px;
+  --card-height: 100px;
+  padding: 22px;
+}
+
+.custom-scroll {
+  max-width: 70%;
+  margin: 0 auto;
+  border: 2px dashed #ccc;
+  border-radius: var(--radius, 10px);
 }
