@@ -45,3 +45,17 @@ main {
   border: 2px dashed #ccc;
   border-radius: var(--radius, 10px);
 }
+
+.campo-custom {
+  --campo-width: 180px;
+  --campo-accent: #c7f0db;
+  --campo-accent-hover: #8fdcb6;
+  --campo-border: #9bcfb6;
+}
+
+.slider-custom {
+  max-width: 360px;
+  --slider-accent: #c7f0db;
+  --slider-accent-strong: #46a978;
+  --slider-track: #dce7e1;
+}

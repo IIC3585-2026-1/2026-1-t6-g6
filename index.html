@@ -10,6 +10,8 @@
     <script type="module" src="./components/breadcrumbs.js"></script>
     <script type="module" src="./components/card.js"></script>
     <script type="module" src="./components/horizontal-scroll.js"></script>
+    <script type="module" src="./components/campo-numerico.js"></script>
+    <script type="module" src="./components/mi-slider.js"></script>
   </head>
   <body>
     <main>
@@ -70,6 +72,43 @@
           <web-card class="custom">Card 4</web-card>
           <web-card class="custom">Card 5</web-card>
         </web-horizontal-scroll>
+      </div>
+
+      <div class="item">
+        <h1>Campo Numérico</h1>
+        <campo-numerico value="0">Number:</campo-numerico>
+        <campo-numerico
+          value="10"
+          min="0"
+          max="20"
+          step="2"
+          class="campo-custom"
+        >
+          Stock:
+        </campo-numerico>
+      </div>
+
+      <div class="item">
+        <h1>Slider</h1>
+        <mi-slider min="0" max="100" value="50" step="5" style="max-width: 300px">
+          <mi-slider-label>0&#8451;</mi-slider-label>
+          <mi-slider-label position="25">25&#8451;</mi-slider-label>
+          <mi-slider-label position="50">50&#8451;</mi-slider-label>
+          <mi-slider-label position="75">75&#8451;</mi-slider-label>
+          <mi-slider-label position="100">100&#8451;</mi-slider-label>
+        </mi-slider>
+
+        <mi-slider
+          min="-50"
+          max="50"
+          value="10"
+          step="10"
+          class="slider-custom"
+        >
+          <mi-slider-label position="-50">-50</mi-slider-label>
+          <mi-slider-label position="0">0</mi-slider-label>
+          <mi-slider-label position="50">50</mi-slider-label>
+        </mi-slider>
       </div>
     </main>
   </body>
